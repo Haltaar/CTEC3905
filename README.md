@@ -16,4 +16,4 @@ The requirement for any backend such as PHP or an SQL database is pretty much no
 # Content considerations
 The large bulk of the content will be made up of entirely original work, so copyright is of minimal concern.
 Audio showcases will most likely utilise an API from soundcloud, as the content is already availible there. However, if it is deemed suitable for this project, an HTML5/JS audio player may be built
-The photography section will likely consist of a gallery. No external sources are needed, so everything can be done with HTML, CSS, and JS.
+The photography section will likely consist of a gallery. This could be done from scratch, however the images to be used are already shared on instagram, so it may be possible embed those posts instead. No external sources are needed, so everything can be done with HTML, CSS, and JS.
