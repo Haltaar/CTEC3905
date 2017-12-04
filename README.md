@@ -20,6 +20,7 @@ The photography section will likely consist of a gallery. This could be done fro
 
 # Design
 ![alt Haltaar logo](https://i1.sndcdn.com/avatars-000169502415-kb2a90-t500x500.jpg)
+
 Using an existing logo for my soundcloud project, I can focus the design around a dark, minimalist, monochrome aesthetic. This will create a bold design, but one that does not interfere with the users perceptions of the content on display.
 
 # Splash page
