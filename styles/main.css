@@ -87,7 +87,7 @@ nav>ul>li:hover {
 	background-color: #222;
 }
 
-#instafeed {
+#instafeed-large, #instafeed-small, #instafeed-thumb {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -100,9 +100,39 @@ nav>ul>li:hover {
 .instagram-square {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .instagram-portrait {
 	display: none;
 }
 .instagram-landscape {
 	display: none;
 }
+
+
+
+/*#instafeed-thumb {
+	display: none;
+}*/
+
+@media only screen and (min-width: 1024px) {
+	#instafeed-large {display: none;}
+	#instafeed-small {display: flex;}
+	#instafeed-thumb {display: none;}
+}
+@media only screen and (max-width: 1024px) {
+	#instafeed-large {display: none;}
+	#instafeed-small {display: none;}
+	#instafeed-thumb {display: flex;}
+}
+@media only screen and (max-width : 800px) {
+	#instafeed-small {display: none;}
+	#instafeed-thumb {display: none;}
+	#instafeed-large {display: flex;}
+}
+
+
+
+/*@media only screen and (min-width : 1024px) {
+	#instafeed-small {display: none;}
+	#instafeed-thumb {display: none;}
+}*/

@@ -20,30 +20,35 @@
 		</nav>
 	</header>
 	
-	<div id="instafeed"></div>
+	<div id="instafeed-large"></div>
+	<div id="instafeed-small"></div>
+	<div id="instafeed-thumb"></div>
 
 	<script type="text/javascript">
-		var feed = new Instafeed({
+		
+		var div = document.createElement("div");
+        	var div2 = document.createElement("div");
+        	var div3 = document.createElement("div");
+        	var div4= document.createElement("div");
+        	var div5 = document.createElement("div");
+        	var div6 = document.createElement("div");
+        	div.className = "hidden2";
+        	div2.className = "hidden2";
+        	div3.className = "hidden2";
+        	div4.className = "hidden2";
+        	div5.className = "hidden2";
+        	div6.className = "hidden2";
+
+		var feedLarge = new Instafeed({
 			get: 'user',
 			userId: '144458141',
 			// clientId: 'ab962d807b414e06a01f5929354f3c65'
 			accessToken: '144458141.1677ed0.8046d39f2e1a4d59ac976bf49ba5312b',
-			resolution: 'low_resolution',
+			resolution: 'standard_resolution',
+			target: 'instafeed-large',
 	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
 	        after: function() {
-	        	var div = document.createElement("div");
-	        	var div2 = document.createElement("div");
-	        	var div3 = document.createElement("div");
-	        	var div4= document.createElement("div");
-	        	var div5 = document.createElement("div");
-	        	var div6 = document.createElement("div");
-	        	div.className = "hidden2";
-	        	div2.className = "hidden2";
-	        	div3.className = "hidden2";
-	        	div4.className = "hidden2";
-	        	div5.className = "hidden2";
-	        	div6.className = "hidden2";
 	        	document.getElementById("instafeed").appendChild(div);
 	        	document.getElementById("instafeed").appendChild(div2);
 	        	document.getElementById("instafeed").appendChild(div3);
@@ -51,9 +56,48 @@
 	        	document.getElementById("instafeed").appendChild(div5);
 	        	document.getElementById("instafeed").appendChild(div6);
 	        }
-
-
 		});
-		feed.run();
+		feedLarge.run();
+
+		var feedSmall = new Instafeed({
+			get: 'user',
+			userId: '144458141',
+			// clientId: 'ab962d807b414e06a01f5929354f3c65'
+			accessToken: '144458141.1677ed0.8046d39f2e1a4d59ac976bf49ba5312b',
+			resolution: 'low_resolution',
+			target: 'instafeed-small',
+	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
+	        after: function() {
+	        	document.getElementById("instafeed").appendChild(div);
+	        	document.getElementById("instafeed").appendChild(div2);
+	        	document.getElementById("instafeed").appendChild(div3);
+	        	document.getElementById("instafeed").appendChild(div4);
+	        	document.getElementById("instafeed").appendChild(div5);
+	        	document.getElementById("instafeed").appendChild(div6);
+	        }
+		});
+		feedSmall.run();
+
+		var feedThumb = new Instafeed({
+			get: 'user',
+			userId: '144458141',
+			// clientId: 'ab962d807b414e06a01f5929354f3c65'
+			accessToken: '144458141.1677ed0.8046d39f2e1a4d59ac976bf49ba5312b',
+			resolution: 'thumbnail',
+			target: 'instafeed-thumb',
+	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
+	        after: function() {
+	        	document.getElementById("instafeed").appendChild(div);
+	        	document.getElementById("instafeed").appendChild(div2);
+	        	document.getElementById("instafeed").appendChild(div3);
+	        	document.getElementById("instafeed").appendChild(div4);
+	        	document.getElementById("instafeed").appendChild(div5);
+	        	document.getElementById("instafeed").appendChild(div6);
+	        }
+		});
+		feedThumb.run();
+
 	</script>
 </body>
