@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Haltaar.png</title>
+	<link rel="icon" type="image/gif" href="images/haltaar-icon.jpg">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="text/javascript" src="js/instafeed.js"></script>
+</head>
+
+<body>
+	<header>	
+		<img src="images/haltaar-banner.png" alt="Haltaar Banner" height="110" width="600">
+		<nav>
+			<ul>
+				<li><a href="splash.html">..</a></li>
+				<li><a href="music.html">.WAV</a></li>
+				<li><a href="pictures.html">.PNG</a></li>
+				<li><a>.INFO</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="instafeed"></div>
+
+	<script type="text/javascript">
+		var feed = new Instafeed({
+			get: 'user',
+			userId: '144458141',
+			// clientId: 'ab962d807b414e06a01f5929354f3c65'
+			accessToken: '144458141.1677ed0.8046d39f2e1a4d59ac976bf49ba5312b',
+			resolution: 'low_resolution',
+	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
+	        after: function() {
+	        	var div = document.createElement("div");
+	        	var div2 = document.createElement("div");
+	        	var div3 = document.createElement("div");
+	        	var div4= document.createElement("div");
+	        	var div5 = document.createElement("div");
+	        	var div6 = document.createElement("div");
+	        	div.className = "hidden2";
+	        	div2.className = "hidden2";
+	        	div3.className = "hidden2";
+	        	div4.className = "hidden2";
+	        	div5.className = "hidden2";
+	        	div6.className = "hidden2";
+	        	document.getElementById("instafeed").appendChild(div);
+	        	document.getElementById("instafeed").appendChild(div2);
+	        	document.getElementById("instafeed").appendChild(div3);
+	        	document.getElementById("instafeed").appendChild(div4);
+	        	document.getElementById("instafeed").appendChild(div5);
+	        	document.getElementById("instafeed").appendChild(div6);
+	        }
+
+
+		});
+		feed.run();
+	</script>
+</body>
