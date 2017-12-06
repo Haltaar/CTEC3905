@@ -1,3 +1,53 @@
+body {
+	background-color: #222;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+}
+
+header {
+	background-color: black;
+	background
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+}
+
+nav {
+	background-color: black;
+	min-width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav>ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+nav>ul>li{
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	
+}
+
+nav>ul>li>a{
+	text-decoration: none;
+	font-family: Impact, Charcoal, sans-serif;
+	font-weight: bold;
+	font-size: 1.25em;
+	color: white;
+
+}
+
+nav>ul>li:hover {
+	background-color: #222;
+}
+
 .content-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -43,7 +93,7 @@
 	justify-content: space-around;
 	align-content: center;
 	width: 94vw;
-	min-width: 600px;
+	/*min-width: 600px;*/
 	/*margin-top: 3%;*/
 	padding: 2%;
 }
@@ -78,65 +128,4 @@
 	#instafeed-small {display: none;}
 	#instafeed-thumb {display: none;}
 	#instafeed-large {display: flex;}
-}
-
-
-
-/*@media only screen and (min-width : 1024px) {
-	#instafeed-small {display: none;}
-	#instafeed-thumb {display: none;}
-}*/
-
-body {
-	background-color: #222;
-	width: 100%;
-	margin: 0px 0px 0px 0px;
-	padding: 0;
-}
-
-h1 {
-	color: white;
-}
-
-header {
-	background-color: black;
-	background
-	margin: 0;
-	padding: 0;
-	min-width: 100%;
-}
-
-nav {
-	background-color: black;
-	min-width: 100%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-nav>ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: black;
-}
-
-nav>ul>li{
-	float: left;
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	
-}
-
-nav>ul>li>a{
-	text-decoration: none;
-	font-family: Impact, Charcoal, sans-serif;
-	font-weight: bold;
-	font-size: 1.25em;
-	color: white;
-
-}
-
-nav>ul>li:hover {
-	background-color: #222;
 }
