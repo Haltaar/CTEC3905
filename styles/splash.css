@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 }
@@ -67,10 +68,11 @@ footer>p>a>img {
 
 .centre {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	max-width: 100%;
-	height: 60vh;
+	height: 65vh;
 }
 
 .centre2 {
@@ -86,6 +88,11 @@ footer>p>a>img {
 	display: flex;
 	justify-content: center;
 	width: 96vw;
+}
+
+.swap>img {
+	max-width: 100%
+	height: auto;
 }
 
 .swap img:last-child{display: none}
