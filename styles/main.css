@@ -130,7 +130,7 @@ nav>ul>li:hover {
 	#instafeed-thumb {display: flex;}
 }
 @media only screen and (max-width : 800px) {
-	#instafeed-small {display: flex;}
+	#instafeed-small {display: none;}
 	#instafeed-thumb {display: none;}
-	#instafeed-large {display: none;}
+	#instafeed-large {display: flex;}
 }
