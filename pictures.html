@@ -28,17 +28,25 @@
 	<script type="text/javascript">
 		
 		var div = document.createElement("div");
-        	var div2 = document.createElement("div");
-        	var div3 = document.createElement("div");
-        	var div4= document.createElement("div");
-        	var div5 = document.createElement("div");
-        	var div6 = document.createElement("div");
-        	div.className = "hidden";
-        	div2.className = "hidden";
-        	div3.className = "hidden";
-        	div4.className = "hidden";
-        	div5.className = "hidden";
-        	div6.className = "hidden";
+    	var div2 = document.createElement("div");
+    	var div3 = document.createElement("div");
+    	var div4= document.createElement("div");
+    	var div5 = document.createElement("div");
+    	var div6 = document.createElement("div");
+    	var div7 = document.createElement("div");
+    	var div8 = document.createElement("div");
+    	// var div9 = document.createElement("div");
+    	// var div10 = document.createElement("div");
+    	div.className = "hidden";
+    	div2.className = "hidden";
+    	div3.className = "hidden";
+    	div4.className = "hidden";
+    	div5.className = "hiddenThumb";
+    	div6.className = "hiddenThumb";
+    	div7.className = "hiddenThumb";
+    	div8.className = "hiddenThumb";
+    	// div9.className = "hidden";
+    	// div10.className = "hidden";
 
 		var feedLarge = new Instafeed({
 			get: 'user',
@@ -47,16 +55,7 @@
 			accessToken: '144458141.1677ed0.8046d39f2e1a4d59ac976bf49ba5312b',
 			resolution: 'standard_resolution',
 			target: 'instafeed-large',
-	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
-	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
-	        after: function() {
-	        	document.getElementById("instafeed").appendChild(div);
-	        	document.getElementById("instafeed").appendChild(div2);
-	        	document.getElementById("instafeed").appendChild(div3);
-	        	document.getElementById("instafeed").appendChild(div4);
-	        	document.getElementById("instafeed").appendChild(div5);
-	        	document.getElementById("instafeed").appendChild(div6);
-	        }
+	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
 		});
 		feedLarge.run();
 
@@ -70,12 +69,10 @@
 	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
 	        after: function() {
-	        	document.getElementById("instafeed").appendChild(div);
-	        	document.getElementById("instafeed").appendChild(div2);
-	        	document.getElementById("instafeed").appendChild(div3);
-	        	document.getElementById("instafeed").appendChild(div4);
-	        	document.getElementById("instafeed").appendChild(div5);
-	        	document.getElementById("instafeed").appendChild(div6);
+	        	document.getElementById("instafeed-small").appendChild(div);
+	        	document.getElementById("instafeed-small").appendChild(div2);
+	        	document.getElementById("instafeed-small").appendChild(div3);
+	        	document.getElementById("instafeed-small").appendChild(div4);
 	        }
 		});
 		feedSmall.run();
@@ -90,15 +87,20 @@
 	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
 	        after: function() {
-	        	document.getElementById("instafeed").appendChild(div);
-	        	document.getElementById("instafeed").appendChild(div2);
-	        	document.getElementById("instafeed").appendChild(div3);
-	        	document.getElementById("instafeed").appendChild(div4);
-	        	document.getElementById("instafeed").appendChild(div5);
-	        	document.getElementById("instafeed").appendChild(div6);
+	        	document.getElementById("instafeed-thumb").appendChild(div5);
+	        	document.getElementById("instafeed-thumb").appendChild(div6);
+	        	document.getElementById("instafeed-thumb").appendChild(div7);
+	        	document.getElementById("instafeed-thumb").appendChild(div8);
+	        	// document.getElementById("instafeed-thumb").appendChild(div8);
+	        	// document.getElementById("instafeed-thumb").appendChild(div9);
+	        	// document.getElementById("instafeed-thumb").appendChild(div10);
 	        }
 		});
 		feedThumb.run();
 
 	</script>
 </body>
+
+<footer>
+	<p>© Seth Wilkin 2017</p>
+</footer>
