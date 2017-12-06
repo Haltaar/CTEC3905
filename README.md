@@ -22,6 +22,7 @@ The photography section will likely consist of a gallery. This could be done fro
 ![alt Haltaar logo](https://i1.sndcdn.com/avatars-000169502415-kb2a90-t500x500.jpg)
 
 Using an existing logo for my soundcloud project, I can focus the design around a dark, minimalist, monochrome aesthetic. This will create a bold design, but one that does not interfere with the users perceptions of the content on display.
+The responsiveness of the site has been largely achieved through use of flexbox containers, rather than @media breakpoints. Further testing may show that breakpoints are required, however for the time being the site works very well across tested devices.
 
 # Splash page
 ![alt Splash Page](https://i.imgur.com/HAZyKwJ.png)
