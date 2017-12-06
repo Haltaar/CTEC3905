@@ -31,18 +31,19 @@ header {
 
 .sc-embed {
 	margin: 1vw;
-	width: 500px
-	height: 500px;
-	flex: 1 0 auto;
+	width: 450px;
+	height: 450px;
+	flex: 0 0 auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-style: none;
 }
 
 .hidden {
 	visibility: hidden;
 	margin: 1vw;
-	width: 500px;
+	width: 450px;
 	height: 0;
-	flex: 1 0 auto;
+	flex: 0 0 auto;
 }
 
 .hidden2 {
@@ -96,7 +97,9 @@ nav>ul>li:hover {
 	/*margin-top: 3%;*/
 	padding: 2%;
 }
-
+.instagram-square {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .instagram-portrait {
 	display: none;
 }
