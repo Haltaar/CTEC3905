@@ -102,6 +102,12 @@ nav>ul>li:hover {
 	/*margin-top: 3%;*/
 	padding: 2%;
 }
+
+#instafeed-large img {
+	max-width: 100%;
+	height: auto;
+}
+
 .instagram-square {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
