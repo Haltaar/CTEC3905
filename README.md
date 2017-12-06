@@ -22,6 +22,21 @@ The photography section will likely consist of a gallery. This could be done fro
 ![alt Haltaar logo](https://i1.sndcdn.com/avatars-000169502415-kb2a90-t500x500.jpg)
 
 Using an existing logo for my soundcloud project, I can focus the design around a dark, minimalist, monochrome aesthetic. This will create a bold design, but one that does not interfere with the users perceptions of the content on display.
+The responsiveness of the site has been largely achieved through use of flexbox containers, rather than @media breakpoints. Further testing may show that breakpoints are required, however for the time being the site works very well across tested devices.
 
 # Splash page
+![alt Splash Page](https://i.imgur.com/HAZyKwJ.png)
+
 The first page of the site is centred around the logo, with links to the seperate sections of the site (stylised as .WAV for audio projects, .PNG for photography, and .INFO for a general about page). Although the appearance of the page is rather barren, using a simple :hover CSS effect and a varient of the logo image that was databent using audacity, the image will "glitch" when hovered over, providing an interesting visual surprise for the reader as their mouse moves over the page toward the centred links just below the logo image.
+
+# Music page
+![alt Music Page](https://i.imgur.com/H22xljf.jpg)
+
+The stylised .wav links point towards a page showcasing a hand picked selection of my soundcloud posts. The soundcloud player allows visitors to listen to the music posted on the site without having to exit to soundcloud, whilst still providing the option to open the associated soundcloud page in a new tab.
+Issues with this page surrounding proper centring and resizing of elements were solved by using a flex box container and appending empty elements to the end of the container to ensure the last row aligned properly to the grid.
+
+# Pictures page
+![alt Pictures Page](https://i.imgur.com/6OujwkL.jpg)
+
+The stylised .png links point towards a page that features a feed of my instagram posts. This was achieved using a script by Steven Schobert called intafeed.js. Using this in combination with the flexbox container methods developed for the music page allow a nice grid display of images, which link to their associated instagram posts in a new tab. The feed only shows square images and ommits non-square ones in order to maintain the grid layout of the page.
+because the contaner element is heavily managed by instafeed.js, additional scripting was required to append the hidden elements in order to maintain the last row's alignment.
