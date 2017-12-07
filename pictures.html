@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
+	<meta charset="utf-8"/>
 	<title>Haltaar.png</title>
 	<link rel="icon" type="image/gif" href="images/haltaar-icon.jpg">
 	<link rel="stylesheet" type="text/css" href="styles/pictures.css">
@@ -35,8 +37,6 @@
     	var div6 = document.createElement("div");
     	var div7 = document.createElement("div");
     	var div8 = document.createElement("div");
-    	// var div9 = document.createElement("div");
-    	// var div10 = document.createElement("div");
     	div.className = "hidden";
     	div2.className = "hidden";
     	div3.className = "hidden";
@@ -45,13 +45,10 @@
     	div6.className = "hiddenThumb";
     	div7.className = "hiddenThumb";
     	div8.className = "hiddenThumb";
-    	// div9.className = "hidden";
-    	// div10.className = "hidden";
 
 		var feedLarge = new Instafeed({
 			get: 'user',
 			userId: '144458141',
-			// clientId: 'ab962d807b414e06a01f5929354f3c65'
 			accessToken: '144458141.1677ed0.8046d39f2e1a4d59ac976bf49ba5312b',
 			resolution: 'standard_resolution',
 			target: 'instafeed-large',
@@ -62,12 +59,10 @@
 		var feedSmall = new Instafeed({
 			get: 'user',
 			userId: '144458141',
-			// clientId: 'ab962d807b414e06a01f5929354f3c65'
 			accessToken: '144458141.1677ed0.8046d39f2e1a4d59ac976bf49ba5312b',
 			resolution: 'low_resolution',
 			target: 'instafeed-small',
 	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
-	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
 	        after: function() {
 	        	document.getElementById("instafeed-small").appendChild(div);
 	        	document.getElementById("instafeed-small").appendChild(div2);
@@ -80,21 +75,15 @@
 		var feedThumb = new Instafeed({
 			get: 'user',
 			userId: '144458141',
-			// clientId: 'ab962d807b414e06a01f5929354f3c65'
 			accessToken: '144458141.1677ed0.8046d39f2e1a4d59ac976bf49ba5312b',
 			resolution: 'thumbnail',
 			target: 'instafeed-thumb',
 	        template: '<a class="instagram-{{orientation}}" href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
-	        //the below function appends hidden div elements to ensure the last row of images aligns to the grid correctly whilst keeping the gid itself centred
 	        after: function() {
 	        	document.getElementById("instafeed-thumb").appendChild(div5);
 	        	document.getElementById("instafeed-thumb").appendChild(div6);
 	        	document.getElementById("instafeed-thumb").appendChild(div7);
 	        	document.getElementById("instafeed-thumb").appendChild(div8);
-	        	// document.getElementById("instafeed-thumb").appendChild(div8);
-	        	// document.getElementById("instafeed-thumb").appendChild(div9);
-	        	// document.getElementById("instafeed-thumb").appendChild(div10);
-	        }
 		});
 		feedThumb.run();
 
@@ -104,4 +93,4 @@
 		<p><a href="https://www.facebook.com/seth.wilkin"> <img src="images/white-facebook.png"> Facebook </a> <a href="https://twitter.com/haltaar"> <img src="images/white-twitter.png"> Twitter </a> <a href="https://soundcloud.com/haltaar"> <img src="images/white-soundcloud.png"> SoundCloud </a> <a href="https://www.instagram.com/HaltaarOfficial/"> <img src="images/white-instagram.png"> Instagram </a> &copy; Seth Wilkin 2017 </p>
 	</footer>
 </body>
-
+</html>

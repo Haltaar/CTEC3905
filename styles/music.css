@@ -51,7 +51,6 @@ nav>ul>li{
 }
 
 nav>ul>li>a{
-	text-decoration: none;
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 1.25em;
@@ -80,7 +79,6 @@ footer>p {
 }
 
 footer>p>a {
-	text-decoration: none;
 	color: white;
 }
 footer>p>a>img {
