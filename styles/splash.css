@@ -12,7 +12,9 @@ html {
 body {
 	background-color: black;
 	color: white;
-
+	position: relative;
+	box-sizing: border-box;
+	padding-bottom: 20px;
 }
 
 nav>ul {
@@ -45,8 +47,8 @@ footer {
 	margin:	0;
 	padding: 0;
 	width: 100%;
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
 }
 
 footer>p {
