@@ -50,6 +50,10 @@ nav>ul>li{
 	
 }
 
+nav>ul>li:hover {
+	background-color: #222;
+}
+
 nav>ul>li>a{
 	font-family: sans-serif;
 	font-weight: bold;
@@ -58,15 +62,13 @@ nav>ul>li>a{
 
 }
 
-nav>ul>li:hover {
-	background-color: #222;
-}
-
 footer {
 	background-color: black;
 	margin:	0;
 	padding: 0;
 	min-width: 100%;
+    box-shadow: 0px 500px 0px 500px #000;
+    height: 2em;
 }
 
 footer>p {
@@ -75,6 +77,7 @@ footer>p {
 	font-size: 1em;
 	color: white;
 	padding: 14px 16px;
+	line-height: 2em;
 }
 
 footer>p>a {
