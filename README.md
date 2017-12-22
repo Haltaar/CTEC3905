@@ -40,3 +40,9 @@ Issues with this page surrounding proper centring and resizing of elements were 
 
 The stylised .png links point towards a page that features a feed of my instagram posts. This was achieved using a script by Steven Schobert called intafeed.js. Using this in combination with the flexbox container methods developed for the music page allow a nice grid display of images, which link to their associated instagram posts in a new tab. The feed only shows square images and ommits non-square ones in order to maintain the grid layout of the page.
 because the contaner element is heavily managed by instafeed.js, additional scripting was required to append the hidden elements in order to maintain the last row's alignment.
+
+# Info page
+![alt Info Page](https://i.imgur.com/K13PF83.jpg)
+
+The stylised .info links point towards a small biography page. It features information on the production of the music and photographs featured, and a small personal message and picture
+
