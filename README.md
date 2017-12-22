@@ -46,3 +46,8 @@ because the contaner element is heavily managed by instafeed.js, additional scri
 
 The stylised .info links point towards a small biography page. It features information on the production of the music and photographs featured, and a small personal message and picture
 
+# Possible Further Development
+
+Overall im relatively happy with the state of the site, however there are a few things I would have liked to habe added. In particularly on the splash page I would have liked to have applied further 'glitch' effects to the text links, in line with the on hover effect for the image, to further enhance the aesthetic.
+
+The footers on most of the pages seem to have an issue where they appear almost half way up the page, where the content ends. I would have liked to have found a way to ensure they at least stick to the bottom of the page. As a workaround, a very large box shadow was applied to the footer elements to keep the space below the footer black, instead of the grey of the body background.
