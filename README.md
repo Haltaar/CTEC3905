@@ -51,3 +51,7 @@ The stylised .info links point towards a small biography page. It features infor
 Overall im relatively happy with the state of the site, however there are a few things I would have liked to habe added. In particularly on the splash page I would have liked to have applied further 'glitch' effects to the text links, in line with the on hover effect for the image, to further enhance the aesthetic.
 
 The footers on most of the pages seem to have an issue where they appear almost half way up the page, where the content ends. I would have liked to have found a way to ensure they at least stick to the bottom of the page. As a workaround, a very large box shadow was applied to the footer elements to keep the space below the footer black, instead of the grey of the body background.
+
+One issue with the music page is that the loading of multiple iframes blocks the onload of the page, causing poor performance on this page. This could possibly be fixed by writing a script to construct the iframes and insert them asynchronusly.
+
+Similarly on the pictures page, the elements inserted by the InstaFeed script dont quite fit a perfect grid layout, with no padding/margin above or below each picture. This could be corrected by editing the instafeed script, but the current result is aesthetically pleasing enough that it will serve perfectly well for the first iteration of the site.
